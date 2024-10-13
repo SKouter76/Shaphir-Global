@@ -1,11 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapphire Global - Your One-Stop Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <style>
+      :root {
+        --primary-color: #000;
+        --secondary-color: #6c757d;
+      }
+      body {
+        font-family: "Arial", sans-serif;
+        padding: 0;
+      }
+      .navbar {
+        background-color: var(--primary-color) !important;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+      }
+      .hero {
+        /* background: url("./assets//banner.jpeg") no-repeat center center;
+        background-size: cover;
+        aspect-ratio: 5/1; */
+        display: flex;
+        justify-content: space-between;
+        background-color: #f1b770;
+        color: black;
+        padding: 50px 50px 0px;
+      }
+      .beauty-card {
+        background-image: url("./assets/beautyCare.jpeg");
+        background-size: cover;
+      }
+      .category-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+      }
+      .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container py-2">
+        <a class="navbar-brand" href="#">Sapphire Global</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Our Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div style="width: 100%; padding: 1rem">
+        <h1 class="animate__animated animate__fadeInDown">
+          Welcome to Sapphire Global
+        </h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s">
+          Your one-stop shop for all your needs
+        </p>
+        <a
+          href="#products"
+          class="btn btn-primary btn-lg animate__animated animate__fadeInUp animate__delay-2s"
+          >Explore Our Products</a
+        >
+      </div>
+      <img
+        src="./assets/cart without bg.png"
+        class="banner-img"
+        style="height: 17rem"
+        alt="Our Store"
+        class=""
+      />
+
+      <!-- </div> -->
+    </header>
+
+    <main class="" style="background-color: whitesmoke; padding: 2rem">
+      <section id="about" class="mb-5 about">
+        <h2 class="text-center mb-5 animate__animated animate__fadeInUp">
+          About Us
+        </h2>
+        <div class="row">
+          <div class="col-md-6 animate__animated animate__fadeInLeft">
+            <img
+              src="./assets/cart.jpg"
+              style="height: 25vh; width: 60vh"
+              alt="Our Store"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6 animate__animated animate__fadeInRight">
+            <p>
+              Sapphire Global is your premier destination for all your shopping
+              needs. We offer a wide range of products across various
+              categories, ensuring that you find exactly what you're looking
+              for. Our commitment to quality and customer satisfaction sets us
+              apart in the e-commerce landscape.
+            </p>
+            <p>
+              With years of experience in the retail industry, we've curated a
+              selection of products that cater to diverse tastes and
+              requirements. Whether you're shopping for everyday essentials or
+              looking for that perfect gift, Sapphire Global has got you
+              covered.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section id="products" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Our Product Categories</h2>
+          <div class="row g-4">
+            <!-- Grocery -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets/groceries.jpeg"
+                  class="card-img-top"
+                  alt="Grocery"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Grocery</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Fashion -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//fashion.jpeg"
+                  class="card-img-top"
+                  alt="Fashion"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Fashion</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Electronics -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//electronics.jpeg"
+                  class="card-img-top"
+                  alt="Electronics"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Electronics</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Beauty Care -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//beautyCare.jpeg"
+                  class="card-img-top"
+                  alt="Beauty Care"
+                />
+                <!-- <div class="beauty-card"></div> -->
+                <div class="card-body card-label">
+                  <h5 class="card-title">Beauty Care</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Home Appliances -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//homeAppliances.jpeg"
+                  class="card-img-top"
+                  alt="Home Appliances"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Home Appliances</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Mobiles -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//mobiles.jpeg"
+                  class="card-img-top"
+                  alt="Mobiles"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Mobiles</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Toys -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//toys.jpeg"
+                  class="card-img-top"
+                  alt="Toys"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Toys</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Books -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card h-100">
+                <img
+                  src="./assets//books.jpeg"
+                  class="card-img-top"
+                  alt="Books"
+                />
+                <div class="card-body card-label">
+                  <h5 class="card-title">Books</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <section id="contact" class="mt-1">
+        <h2 class="text-center mb-3 animate__animated animate__fadeInUp">
+          Contact Us
+        </h2>
+        <div class="row justify-content-center">
+          <div
+            class="col-md-6 animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <div class="">
+              <div class="card-body">                   
+                 <p class="card-text">We'd love to hear from you!</p>
+
+                <ul class="list-unstyled">
+                 
+                  
+                  <li>
+                    <a href="https://wa.me/xxxxxxxxxx?text=Hello%20sapphireglobal%20team,%20I%20would%20like%20to%20inquire%20about%20your%20products. " target="_blank">
+                      <i class="fab fa-whatsapp fa-md"></i>
+                      <a style="color: #fff;text-decoration: underline;" href="https://wa.me/xxxxxxxxxx?text=Hello%20sapphireglobal%20team,%20I%20would%20like%20to%20inquire%20about%20your%20products. " target="_blank">xxxxxxxxxx</a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:Sapphireglobal45@gmail.com">
+                      <i class="fas fa-envelope fa-md"></i>
+                      <a style="color: #0056b3;text-decoration: underline;" href="mailto:Sapphireglobal45@gmail.com">Sapphireglobal45@gmail.com</a>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p>&copy; 2024 Sapphire Global. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
